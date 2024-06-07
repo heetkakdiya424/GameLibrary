@@ -1,0 +1,308 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A38C267-2EE2-47C0-A610-FA8FF868CED3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication8</RootNamespace>
+    <AssemblyName>WebApplication8</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44336</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\info1.mdf" />
+    <Content Include="App_Data\info1_log.ldf">
+      <DependentUpon>info1.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\grid.css" />
+    <Content Include="Downlod.aspx" />
+    <Content Include="gamecantant\logo-assassins-creed-valhalla-.jpg" />
+    <Content Include="gamecantant\m.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="ism\css\my-slider.css" />
+    <Content Include="ism\image\slides\_u\1682448228446_93799.jpg" />
+    <Content Include="ism\image\slides\_u\1682448228637_153517.jpg" />
+    <Content Include="ism\image\slides\_u\1682448276604_230413.jpg" />
+    <Content Include="ism\image\slides\_u\1682449199945_405208.jpg" />
+    <Content Include="ism\image\slides\_u\1682449205957_791643.jpg" />
+    <Content Include="ism\js\ism-2.2.min.js" />
+    <Content Include="login.aspx" />
+    <Content Include="login\css\style.css" />
+    <Content Include="login\fonts\material-icon\css\material-design-iconic-font.css" />
+    <Content Include="login\fonts\material-icon\css\material-design-iconic-font.min.css" />
+    <Content Include="login\fonts\material-icon\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300italic.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500italic.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-600.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700italic.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800italic.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-900.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-italic.svg" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-regular.svg" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700.svg" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700italic.svg" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-italic.svg" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-regular.svg" />
+    <Content Include="login\images\signin-image.jpg" />
+    <Content Include="login\images\signup-image.jpg" />
+    <Content Include="login\js\main.js" />
+    <Content Include="login\vendor\jquery\jquery-ui.min.js" />
+    <Content Include="login\vendor\jquery\jquery.min.js" />
+    <Content Include="phota\2 %281%29 %281%29.png" />
+    <Content Include="phota\2__1___1_-removebg-preview - Copy.png" />
+    <Content Include="phota\51crGxOrinL._SX425_.jpg" />
+    <Content Include="phota\51D-NDOVJRL._SX370_BO1,204,203,200_.jpg" />
+    <Content Include="phota\51MFu2e82VL.jpg" />
+    <Content Include="phota\71DRhS9jOeL._AC_SY879_.jpg" />
+    <Content Include="phota\71KXN8N9d7L._SX522_.jpg" />
+    <Content Include="phota\71lgxcdfDTL._SY500_.jpg" />
+    <Content Include="phota\71YdDkrVieL._SY500_.jpg" />
+    <Content Include="phota\819zQmqyDcL._SX425_.jpg" />
+    <Content Include="phota\81nBSbgcxFL._SY879_.jpg" />
+    <Content Include="phota\81P0i1IS9aL._SY500_.jpg" />
+    <Content Include="phota\915HfS.jpg" />
+    <Content Include="phota\9ce53971b62fd0df3b17d2d4d7d95a3a.jpg" />
+    <Content Include="phota\cea94461287895264cdfaabdb01a4860.jpg" />
+    <Content Include="phota\dark-hexagonal-background-with-gradient-color_79603-1409.jpg" />
+    <Content Include="phota\double-bubble-dark - Copy.png" />
+    <Content Include="phota\s-l500.jpg" />
+    <Content Include="phota\vecteezy_futuristic-gaming-background-in-livestream-vector_6970462.jpg" />
+    <Content Include="phota\wall_bricks.jpg" />
+    <Content Include="signup.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="vallhala.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Downlod.aspx.cs">
+      <DependentUpon>Downlod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downlod.aspx.designer.cs">
+      <DependentUpon>Downlod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="vallhala.aspx.cs">
+      <DependentUpon>vallhala.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vallhala.aspx.designer.cs">
+      <DependentUpon>vallhala.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font\Gravidaz-rgE4A.ttf" />
+    <Content Include="login\css\style.css.map" />
+    <Content Include="login\fonts\material-icon\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="login\fonts\material-icon\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="login\fonts\material-icon\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="login\fonts\material-icon\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300italic.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300italic.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300italic.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-300italic.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500italic.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500italic.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500italic.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-500italic.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-600.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-600.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-600.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-600.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700italic.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700italic.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700italic.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-700italic.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800italic.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800italic.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800italic.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-800italic.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-900.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-900.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-900.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-900.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-italic.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-italic.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-italic.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-italic.woff2" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-regular.eot" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-regular.ttf" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-regular.woff" />
+    <Content Include="login\fonts\poppins\poppins-v5-latin-regular.woff2" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700.eot" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700.ttf" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700.woff" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700.woff2" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700italic.eot" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700italic.ttf" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700italic.woff" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-700italic.woff2" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-italic.eot" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-italic.ttf" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-italic.woff" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-italic.woff2" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-regular.eot" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-regular.ttf" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-regular.woff" />
+    <Content Include="login\fonts\poppins\roboto-condensed-v16-latin-regular.woff2" />
+    <Content Include="login\scss\common\extend.scss" />
+    <Content Include="login\scss\common\fonts.scss" />
+    <Content Include="login\scss\common\global.scss" />
+    <Content Include="login\scss\common\minxi.scss" />
+    <Content Include="login\scss\common\variables.scss" />
+    <Content Include="login\scss\layouts\main.scss" />
+    <Content Include="login\scss\layouts\responsive.scss" />
+    <Content Include="login\scss\style.scss" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1464</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44336/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
